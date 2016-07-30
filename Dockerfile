@@ -4,7 +4,7 @@ RUN git clone https://github.com/estatio/estatio.git /opt/estatio
 
 WORKDIR /opt/estatio
 
-RUN mvn clean install -Pjetty-console
+CMD mvn clean install -Pjetty-console
 
 VOLUME /config
 
