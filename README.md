@@ -18,13 +18,9 @@ Dockerfile for [estatio](https://github.com/estatio/estatio)
 
 3. Run the container, pointing to the directory with the config file. This should now pull the image from Docker hub:
   ```
-  docker run -d -p 8080:8080 \
-  --name="estatio" \
-  -v <path to config folder>:/config \
-  --restart="always" \
-  nathanthegr8/estatio-docker
+  docker run -d -p 8080:8080 --name="estatio" -v <path to config folder>:/config --restart="always" nathanthegr8/estatio-docker
   ```
-  
+
 ## Port Conflicts
 If you run into a port conflict trying to run on 8080 it is simple to modify the port forwarding:
 
